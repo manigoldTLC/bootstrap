@@ -11,3 +11,14 @@
 .secao2 .secao2__card-imagem {
     width: 3rem;
 }
+
+.secao3 .secao3__container-imagem {
+    width: 100%;
+    height: 250px;
+}
+
+.secao3__container-imagem .secao3__imagem {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
