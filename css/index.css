@@ -50,3 +50,8 @@
 .secao5__titulo {
     font-size: 1.1em;
 }
+
+.footer__item {
+    width: 35px;
+    height: 35px;
+}
