@@ -1,13 +1,15 @@
-.secao4 .secao4__container-imagem {
-    width: 30%;
-    height: 30%;
-    border-radius: 50px;
+.clientes__card-imagem {
+    max-width: 40%;
+    border-radius: 50%;
 }
 
-.secao4__container-imagem .secao4__imagem {
+.clientes__imagem {
     width: 100%;
-    height: 100%;
-    border-radius: 50px;
+    border-radius: 50%;
     box-shadow: black 0px 5px 5px;
-    object-fit: cover;
+    object-fit: contain;
+}
+
+.clientes__card-descricao {
+    line-height: 22px;
 }

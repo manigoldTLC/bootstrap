@@ -9,104 +9,100 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/apresentacao.css">
     <link rel="stylesheet" href="css/features.css">
     <link rel="stylesheet" href="css/vantagens.css">
     <link rel="stylesheet" href="css/clientes.css">
-    <link rel="stylesheet" href="css/form-signup.css">
+    <link rel="stylesheet" href="css/registro.css">
     <link rel="stylesheet" href="css/footer.css">
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-light bg-body">
-            <div class="container-fluid justify-content-around">
-                <a class="navbar-brand" href="#">Start Bootstrap</a>
-
-                <a class="btn btn-primary" href="#" role="button">Sign Up</a>
-            </div>
+        <nav class="navbar container d-flex justify-content-between">
+            <a class="navbar-brand" href="#">Start Bootstrap</a>
+            <a class="btn btn-primary" href="#" role="button">Sign Up</a>
         </nav>
     </header>
 
     <main>
-        <section class="secao1">
-            <div class="secao1__imagem">
+        <section class="apresentacao banner">
+            <img class="apresentacao__imagem banner__imagem" src="imgs/img1.png" alt="imagem de apresentação">
 
-                <div class="secao1__div">
-                    <h1 class="secao1__titulo mb-4 text-light text-center fw-bold fs-1 lh-sm">Generate more leads with a
-                        professional landing page!</h1>
+            <div class="apresentacao__conteudo banner__conteudo d-flex flex-column w-100 p-4">
+                <h1 class="apresentacao__titulo titulo text-white text-center">
+                    Generate more leads with a professional landing page!
+                </h1>
 
-                    <form class="row secao1__form justify-content-center m-0 p-0 w-100">
-                        <div class="col-auto">
-                            <label for="inputPassword2" class="visually-hidden">Password</label>
-                            <input type="password" class="form-control" id="inputPassword2" placeholder="Email Address">
-                        </div>
-                        <div class="col-auto ">
-                            <button type="submit" class="btn btn-primary mb-3">Submit</button>
-                        </div>
-                    </form>
-                </div>
+                <form class="apresentacao__form d-flex justify-content-center w-100 mt-4 gap-2">
+                    <div class="apresentacao__input w-75">
+                        <label for="emailAddress1" class="visually-hidden">Endereço de e-mail</label>
+                        <input type="password" class="form-control w-100" id="emailAddress1" placeholder="Email Address">
+                    </div>
 
+                    <button type="submit" class="btn btn-primary w-25">Submit</button>
+                </form>
             </div>
         </section>
 
-        <section class="secao2 container-fluid bg-light w-100 d-flex flex-column align-items-center pb-5 pt-5">
-            <article class="w-50 d-flex flex-column align-items-center gap-3 mb-5">
-                <img class="secao2__card-imagem" src="imgs/copia-de.png" alt="imagem do card">
-                <span class="fw-bold text-center">Fully Responsive</span>
-                <p class="fw-light lh-base text-center">This theme will look great on any device, no matter the size!
+        <section class="features container bg-light d-flex flex-column align-items-center pb-5 pt-5">
+            <article class="features__card w-75 d-flex flex-column align-items-center gap-3 mb-5">
+                <img class="features__card-imagem" src="imgs/copia-de.png" alt="imagem do card">
+                <span class="features__card-titulo text-center text-black">Fully Responsive</span>
+                <p class="features__card-descricao text-center">This theme will look great on any device, no matter the size!
                 </p>
             </article>
 
-            <article class="w-50 d-flex flex-column align-items-center gap-3 mb-5">
-                <img class="secao2__card-imagem" src="imgs/cubo.png" alt="imagem do card">
-                <span class="fw-bold">Full Responsive</span>
-                <p class="fw-light lh-base text-center">This theme will look great on any device, no matter the size!
+            <article class="features__card w-75 d-flex flex-column align-items-center gap-3 mb-5">
+                <img class="features__card-imagem" src="imgs/cubo.png" alt="imagem do card">
+                <span class="features__card-titulo text-black">Fully Responsive</span>
+                <p class="features__card-descricao text-center">This theme will look great on any device, no matter the size!
                 </p>
             </article>
 
-            <article class="w-50 d-flex flex-column align-items-center gap-3">
-                <img class="secao2__card-imagem" src="imgs/envelope.png" alt="imagem do card">
-                <span class="fw-bold">Full Responsive</span>
-                <p class="fw-light lh-base text-center">This theme will look great on any device, no matter the size!
+            <article class="features__card w-75 d-flex flex-column align-items-center gap-3">
+                <img class="features__card-imagem" src="imgs/envelope.png" alt="imagem do card">
+                <span class="features__card-titulo text-black">Fully Responsive</span>
+                <p class="features__card-descricao text-center">This theme will look great on any device, no matter the size!
                 </p>
             </article>
         </section>
 
-        <section class="secao3">
-            <figure class="secao3__container-imagem">
-                <img class="secao3__imagem" src="imgs/img2.png" alt="imagem seção 3">
+        <section class="vantagens">
+            <figure class="vantagens__container-imagem">
+                <img class="vantagens__imagem" src="imgs/img2.png" alt="imagem seção 3">
             </figure>
 
-            <article class="secao3__article w-75 mt-5 mb-5 m-auto">
-                <p class="fw-bold fs-5 mb-3">Fully Responsive Design</p>
-                <p class="fw-light lh-base">
+            <article class="vantagens__card pt-5 pb-5 pe-4 ps-4">
+                <p class="titulo text-black mb-3">Fully Responsive Design</p>
+                <p class="descricao">
                     When you use a theme created by Start Bootstrap, you
                     know that the theme will look great on any device, whether itś a phone, tablet,
                     or desktop the page will behave responsivelt!
                 </p>
             </article>
 
-            <figure class="secao3__container-imagem">
-                <img class="secao3__imagem" src="imgs/img3.png" alt="imagem seção 3">
+            <figure class="vantagens__container-imagem">
+                <img class="vantagens__imagem" src="imgs/img3.png" alt="imagem seção 3">
             </figure>
 
-            <article class="secao3__article w-75 mt-5 mb-5 m-auto">
-                <p class="fw-bold fs-5 mb-3">Updated For Bootstrap 5</p>
-                <p class="fw-light lh-base">
+            <article class="vantagens__card pt-5 pb-5 pe-4 ps-4">
+                <p class="titulo text-black mb-3">Updated For Bootstrap 5</p>
+                <p class="descricao">
                     Newly improved, and full of great utility classes, Bootstrap
                     5 is leading the way in mobile responsive web development! All of themes on Start
                     Bootstrap are now using Bootstrap 5
                 </p>
             </article>
 
-            <figure class="secao3__container-imagem">
-                <img class="secao3__imagem" src="imgs/img4.png" alt="imagem seção 3">
+            <figure class="vantagens__container-imagem">
+                <img class="vantagens__imagem" src="imgs/img4.png" alt="imagem seção 3">
             </figure>
 
-            <article class="secao3__article w-75 mt-5 mb-5 m-auto">
-                <p class="fw-bold fs-5 mb-3">Easy to Use & Customize</p>
-                <p class="fw-light lh-base">
+            <article class="vantagens__card pt-5 pb-5 pe-4 ps-4">
+                <p class="titulo text-black mb-3">Easy to Use & Customize</p>
+                <p class="descricao">
                     Landing Page is just HTML and CSS with a splash of SCSS
                     for users who demand some deeper customization options. Out of the box, just
                     add your content and images, and your new landing page will be ready to go!
@@ -114,69 +110,68 @@
             </article>
         </section>
 
-        <section class="secao4 container-fluid bg-light d-flex flex-column gap-4">
-            <h3 class="secao4__titulo fs-4 text-dark text-center mt-5  fw-bold">What people are saying...</h3>
+        <section class="clientes container bg-light d-flex flex-column pt-5 pb-5 gap-4">
+            <h3 class="clientes__titulo titulo text-center text-black mt-5 fw-bold">What people are saying...</h3>
 
-            <article class="secao4__card d-flex flex-column align-items-center gap-2">
-                <figure class="secao4__container-imagem">
-                    <img class="secao4__imagem" src="imgs/img-pessoa1.png" alt="Imagem de uma pessoa sorrindo">
+            <article class="clientes__card d-flex flex-column align-items-center gap-3">
+                <figure class="clientes__card-imagem">
+                    <img class="clientes__imagem" src="imgs/img-pessoa1.png" alt="Imagem de uma pessoa sorrindo">
                 </figure>
 
-                <span class="secao4__card-nome fw-bold fs-5">Margaret E.</span>
-                <p class="secao4__card-legenda text-center fs-6 fw-light lh-base w-75">"This is fantastic! Thanks so
+                <span class="clientes__card-titulo titulo text-black">Margaret E.</span>
+                <p class="clientes__card-descricao descricao text-center pe-2 ps-2">"This is fantastic! Thanks so
                     much guys!"</p>
             </article>
 
-            <article class="secao4__card d-flex flex-column align-items-center gap-2">
-                <figure class="secao4__container-imagem">
-                    <img class="secao4__imagem" src="imgs/img-pessoa2.png" alt="Imagem de uma pessoa sorrindo">
+            <article class="clientes__card d-flex flex-column align-items-center gap-3">
+                <figure class="clientes__card-imagem">
+                    <img class="clientes__imagem" src="imgs/img-pessoa2.png" alt="Imagem de uma pessoa sorrindo">
                 </figure>
 
-                <span class="secao4__card-nome fw-bold fs-5">Fred S.</span>
-                <p class="secao4__card-legenda text-center fs-6 fw-light lh-base w-75">"Bootstrap is amazing. I've been
+                <span class="clientes__card-titulo titulo text-black">Fred S.</span>
+                <p class="clientes__card-descricao descricao text-center pe-2 ps-2">"Bootstrap is amazing. I've been
                     using it to create lots of super nice landing pages."</p>
             </article>
 
-            <article class="secao4__card d-flex flex-column align-items-center gap-2">
-                <figure class="secao4__container-imagem">
-                    <img class="secao4__imagem" src="imgs/img-pessoa3.png" alt="Imagem de uma pessoa sorrindo">
+            <article class="clientes__card d-flex flex-column align-items-center gap-3">
+                <figure class="clientes__card-imagem">
+                    <img class="clientes__imagem" src="imgs/img-pessoa3.png" alt="Imagem de uma pessoa sorrindo">
                 </figure>
 
-                <span class="secao4__card-nome fw-bold fs-5">Sarah W.</span>
-                <p class="secao4__card-legenda text-center fs-6 fw-light lh-base w-75">"Thanks so much for makign these
+                <span class="clientes__card-titulo titulo text-black">Sarah W.</span>
+                <p class="clientes__card-descricao descricao text-center pe-2 ps-2">"Thanks so much for makign these
                     free resources availabe to us!"</p>
             </article>
         </section>
 
-        <section class="secao5">
-            <div class="secao5__imagem">
+        <section class="registro banner">
+            <img class="registro__imagem banner__imagem" src="imgs/img1.png" alt="imagem de apresentação">
 
-                <div class="secao5__div">
-                    <h4 class="secao5__titulo mb-4 text-light text-center fw-bold">Ready to get started? Sign up now!</h4>
+            <div class="banner__conteudo w-100 p-4">
+                <p class="registro__titulo titulo mb-4 text-white text-center">Ready to get started? Sign up now!</p>
+    
+                <form class="registro__form d-flex justify-content-center gap-2">
+                    <div class="registro__input w-75">
+                        <label for="inputPassword2" class="visually-hidden">Email Address</label>
+                        <input type="password" class="form-control" id="inputPassword2" placeholder="Email Address">
+                    </div>
 
-                    <form class="secao5__form d-flex gap-2">
-                        <div class="">
-                            <label for="inputPassword2" class="visually-hidden">Email Address</label>
-                            <input type="password" class="form-control" id="inputPassword2" placeholder="Email Address">
-                        </div>
-                        <div class="">
-                            <button type="submit" class="btn btn-primary mb-3">Submit</button>
-                        </div>
-                    </form>
-                </div>
+                    <button type="submit" class="btn btn-primary w-25">Submit</button>
+                </form>
+            </div>
         </section>
 
     </main>
 
-    <footer class="footer mt-5 mb-5">
-        <ul class="footer__list d-flex justify-content-center gap-3">
-            <li><a href="#" class="footer__link link-primary text-decoration-underline">About</a></li>
-            <li><a href="#" class="footer__link link-primary text-decoration-underline">Contact</a></li>
-            <li><a href="#" class="footer__link link-primary text-decoration-underline">Terms of Use</a></li>
+    <footer class="footer container pt-5 pb-5">
+        <ul class="footer__list d-flex justify-content-center flex-wrap gap-2">
+            <li><a href="#" class="footer__link link-primary text-decoration-underline">About</a></li> .
+            <li><a href="#" class="footer__link link-primary text-decoration-underline">Contact</a></li> .
+            <li><a href="#" class="footer__link link-primary text-decoration-underline">Terms of Use</a></li> .
             <li><a href="#" class="footer__link link-primary text-decoration-underline">Privacy Policy</a></li>
         </ul>
 
-        <p class="footer_copy text-center mt-3">&copy; Your Website 2021. All Rights Reserved.</p>
+        <p class="footer__copy text-center mt-3">&copy; Your Website 2021. All Rights Reserved.</p>
 
         <ul class="footer__list-media d-flex justify-content-center gap-3 mt-3">
             <li class="footer__item"><img src="imgs/facebook.svg" alt="link para Facebook" class="footer__media-link w-100"></li>

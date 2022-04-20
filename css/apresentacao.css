@@ -1,9 +1,3 @@
-.secao1__imagem {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 60vh;
-    background-image: url(../imgs/img1.png);
-    padding: 2em;
+.apresentacao__titulo {
+    font-size: 1.5em;
 }
