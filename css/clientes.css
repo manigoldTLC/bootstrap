@@ -1,6 +1,11 @@
+.clientes__card {
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .clientes__card-imagem {
-    max-width: 40%;
-    border-radius: 50%;
+    max-width: 150px;
 }
 
 .clientes__imagem {
@@ -12,4 +17,16 @@
 
 .clientes__card-descricao {
     line-height: 22px;
+}
+
+@media screen and (min-width: 1024px) {
+    .clientes__card {
+        max-width: 20%;
+        margin: 0;
+    }
+
+    .clientes__card-imagem {
+        max-width: 40%;
+    }
+
 }
